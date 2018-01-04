@@ -9,7 +9,11 @@ package practice02;
 public class PTra02_07 {
 	public static void main(String[] args) {
 		int num = 97;
-		System.out.println("num:" + num);
+		int target = 11;
+
+		System.out.print(num/target);
+		System.out.print("余り");
+		System.out.print(num%target);
 
 		// ★ int型の変数targetを宣言して、97未満の数字を代入してください（値は任意です）
 
