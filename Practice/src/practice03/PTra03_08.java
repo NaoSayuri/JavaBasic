@@ -35,6 +35,21 @@ public class PTra03_08 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
+		int orange = 150;
+		int apple = 160;
+		int coffee = 200;
+
+
+
+		if (num == 1) {
+			System.out.println(money -= orange);
+		}else if (num==2) {
+			System.out.println(money -= apple);
+		}else if (num==3) {
+			System.out.println(money -= coffee);
+		}
+
+
 
 	}
 }

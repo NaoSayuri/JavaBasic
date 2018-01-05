@@ -7,7 +7,7 @@ package practice03;
  */
 
 public class PTra03_04 {
-	public static void main(String[] args) {
+	   public static void main(String[] args) {
 		// 入力型プログラムです。
 		// 下記の命令は、入力型プログラムで必要な記述になります。
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
@@ -32,6 +32,18 @@ public class PTra03_04 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
+		if(num % 4==0) {
+			System.out.println(num+"年はうるう年です。");
+
+		}else if(num % 100 == 0) {
+			System.out.println(num+"年はうるう年ではありません。");
+
+		}else if(num % 400 == 0) {
+			System.out.println(num+"年はうるう年です。");
+		}else {
+			System.out.println(num+"年はうるう年ではありません。");
+
+		}
 
 
 	}

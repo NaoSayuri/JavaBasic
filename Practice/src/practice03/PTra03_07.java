@@ -30,6 +30,12 @@ public class PTra03_07 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
+		 if (1<=num && num <=5){
+	    	System.out.println(num);
+
+        }else {
+	    	System.out.println("選択したのは、1～5以外です");
+	    }
 
 
 	}
