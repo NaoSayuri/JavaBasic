@@ -17,7 +17,7 @@ public class PTra04_05 {
 		System.out.print("じゃんけんゲームを開始します。");
 
 		// 変数winFlgがtrueだった場合にループが終わります
-		while (!winFlg /* winFlg == falseと同じ意味 */) {
+		while (!winFlg /* winFlg == falseと同じ意味 */){
 
 			System.out.println("あなたの手は？");
 			System.out.println("0:グー、1：チョキ、2：パー");
@@ -34,6 +34,7 @@ public class PTra04_05 {
 			// 下記の命令を実行すると変数cpuHandに、0以上、変数3未満の数字がランダムで代入されます
 			int cpuHand = new java.util.Random().nextInt(3);
 
+
 			//---------------------ここから本題-----------------------
 			/*
 			 * 以下のプログラムでは、まだ未完成です。
@@ -46,21 +47,42 @@ public class PTra04_05 {
 			 */
 			if (cpuHand == 0) {
 				System.out.println("グー！");
-
-
+				if(myHand == 0) {
+					System.out.println("あいこ");
+				}if(myHand == 1) {
+					System.out.println("負け");
+					}if(myHand == 2) {
+					System.out.println("勝ち");
+		        	winFlg = true;
+				}
 
 			} else if (cpuHand == 1) {
 				System.out.println("チョキ！！");
+				if(myHand == 1) {
+				System.out.println("あいこ");
 
+				}if(myHand == 2) {
+					System.out.println("負け");
 
+				}if(myHand == 0) {
+					System.out.println("勝ち");
+				    winFlg = true;
+				}
 
-			} else {
+			} else if(cpuHand == 2) {
 				System.out.println("パー！！");
-
-
+				if(myHand == 0) {
+					System.out.println("負け");
+				}if(myHand== 2) {
+					System.out.println("あいこ");
+				}if(myHand == 1) {
+					System.out.println("勝ち");
+				     winFlg =true;
+				}
 
 			}
-
 		}
+
 	}
 }
+
