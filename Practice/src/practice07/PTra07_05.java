@@ -20,18 +20,18 @@ public class PTra07_05 {
 		 */
 		//------for start
 
-		for(int i = 0; i < 5; i++){
+		for(int i = 0; i < array.length; i++){
 
-	}
 
 
 			// ★ 0～100000の中からランダムで値を取得して、配列arrayのi番目に代入してください
-		int array = new java.util.Random().nextInt(5);
-
+			int num = new java.util.Random().nextInt(100000);
+			array[i] = num;
 
 			// ★ 配列arrayのi番目の値を出力してください
-		System.out.println(array[i]);
+			System.out.println(array[i]);
 
+		}
 
 		//------for end
 	}
