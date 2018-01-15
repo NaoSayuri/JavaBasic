@@ -6,7 +6,7 @@ package practice10;
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 
-public class PTra10_03 {
+public class  PTra10_03 extends User{
 
 	/*
 	 * PTra10_01で作成したUserクラスを使用します
@@ -20,23 +20,37 @@ public class PTra10_03 {
 
 		// ★ 変数usに、Userクラスのインスタンスを作成・代入してください
 
+		User us = new User();
+
 
 		System.out.println("ユーザID（数字）、 ユーザ名、メールアドレス、パスワードをカンマ区切りで入力してください");
 
 		// ★ java.util.Scannerクラスをインスタンス化し、変数scannerに代入してください
 
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
 
 		// ★ 入力された値を、String型の変数lineに格納してください
 
+		String line = scanner.nextLine();
 
 		// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
+
+		String str = ",";
 
 
 		// ★ 配列にした値を、usの各フィールドに代入してください
 		// ユーザIDに該当する値が数値でなかった場合は、エラーでプログラムが止まっても良いです
 
+		str = us.userNm;
+		str = us.mail;
+		str = us.password ;
+
 
 		// ★ 変数usに格納されているインスタンスの、フィールドuserId, userNm, mail, passwordを出力してください
 
+		System.out.print(us.userId);
+		System.out.print(us.userNm);
+		System.out.print(us.mail);
+		System.out.print(us.password);
 	}
 }
