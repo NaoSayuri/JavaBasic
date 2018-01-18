@@ -10,6 +10,8 @@ public class PTra11_02 {
 	public static void main(String[] args) {
 
 		// ★ ReadFileClassのクラスメソッドreadBookDataFile()を使い、本情報を取得します
+		
+		String book = readBookDataFile();
 
 
 		System.out.println("探したい本のタイトル（又はその一部）を入力してください");
