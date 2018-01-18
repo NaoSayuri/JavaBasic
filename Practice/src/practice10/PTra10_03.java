@@ -6,7 +6,7 @@ package practice10;
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 
-public class  PTra10_03 extends User{
+public class  PTra10_03 {
 
 	/*
 	 * PTra10_01で作成したUserクラスを使用します
@@ -35,22 +35,23 @@ public class  PTra10_03 extends User{
 
 		// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
 
-		String str = ",";
+		 String[] splitLine = line.split(",", 0);
 
 
 		// ★ 配列にした値を、usの各フィールドに代入してください
 		// ユーザIDに該当する値が数値でなかった場合は、エラーでプログラムが止まっても良いです
 
-		str = us.userNm;
-		str = us.mail;
-		str = us.password ;
+		 us.userId = Integer.parseInt(splitLine[0]);
+		 us.userNm = splitLine[1];
+		 us.mail = splitLine[2];
+		 us.password = splitLine[3];
 
 
 		// ★ 変数usに格納されているインスタンスの、フィールドuserId, userNm, mail, passwordを出力してください
 
-		System.out.print(us.userId);
-		System.out.print(us.userNm);
-		System.out.print(us.mail);
-		System.out.print(us.password);
+		System.out.println(us.userId);
+		System.out.println(us.userNm);
+		System.out.println(us.mail);
+		System.out.println(us.password);
 	}
 }
