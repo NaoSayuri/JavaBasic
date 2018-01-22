@@ -20,6 +20,9 @@ public class PTra10_06 {
 		 */
 
 		Car[] car =  new Car[3];
+		car[0] = new Car();
+		car[1] = new Car();
+		car[2] = new Car();
 
 
 		car[0].serialNo = 11111;
@@ -36,7 +39,10 @@ public class PTra10_06 {
 
 		final int distance = 300;
 
-		for(int i = 0 ; i < 3 ; i++){
+		for(int i = 0 ; i <  car.length ; i++){
+
+		System.out.println(car[i].serialNo + car[i].color );
+
 
 			int m = 0;
 			int n = 0;
