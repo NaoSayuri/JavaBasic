@@ -15,22 +15,23 @@ public class SuperHero extends Hero {
 	 *
 	 * 		equipmentのアクセサ
 	 */
-
-
-		String equipment;
-		Item item;
-
-		public int attack() {
-			return super.attack() + item.getAdditionalDamage();
-		}
-
-	public String getEquipment() {
-		return this.equipment;
-
+	public SuperHero() {
+		super();
 	}
 
-	public void setEqipmant() {
+	private Item equipment;
+
+	public Item getEquipment() {
+		return equipment;
+
+	}
+	public void setEquipment(Item equipment) {
 		this.equipment = equipment;
+	}
+
+
+	public int attack() {
+		return super.attack() + equipment.getAdditionalDamage();
 	}
 
 }

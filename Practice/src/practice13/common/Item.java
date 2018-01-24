@@ -14,19 +14,19 @@ public class Item {
 	 * 		上記2つを設定するための引数を持つ
 	 */
 
-		private String name;
-		private int additionalDamage;
+		String name;
+		 int additionalDamage;
 
 		public int getAdditionalDamage() {
 				return this.additionalDamage;
 
 		}
 
-			public void setAddtionalDamage(int additional) {
+			public void setAddtionalDamage(int additionaldamage) {
 				this.additionalDamage = additionalDamage;
 			}
 
-		Item(String name, int additionalDamage){
+		public Item(String name, int additionalDamage){
 			this.name = name;
 			this.additionalDamage = additionalDamage;
 
