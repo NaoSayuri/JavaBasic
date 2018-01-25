@@ -11,6 +11,9 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import practice18.entity.Player;
+
+
 public class PTra18_02 {
 
 	/*
@@ -41,23 +44,29 @@ public class PTra18_02 {
 		// ★ ArrayListに格納されているインスタンス全てのtoStringメソッドを実行し、出力してください
 		// ※ できれば拡張for文を使いましょう
 
-
-		  ArrayList<String> array = new ArrayList<>();
+		  ArrayList<Player> array = new ArrayList<>();
 	        try(Scanner scanner = new Scanner(new File("file/BestElevenCandidate.csv"))) {
 	            while (scanner.hasNext()) {
-	                String Player = scanner.nextLine();
-	                // ★ 1行ごとにArrayListに格納してください
-	                array.add(Player);
 
+		            	String line = scanner.nextLine();
+
+		            	String[] splitLine = line.split(",", 0);
+
+		            	Player player = new Player();
+
+		            player.setPosition(splitLine[0]);
+		            player.setName(splitLine[1]);
+		            player.setCountry(splitLine[2]);
+		            player.setTeam(splitLine[3]);
+
+	                array.add(player);
 	            }
-
 	        } catch (FileNotFoundException e) {
-	            System.out.println("ファイルが見つかりません");
 	        }
-			// ★ ArrayListに格納された値を全て表示してください
-			// ※ できれば拡張for文を使いましょう
-	        for(String arraylist : array) {
-	            	System.out.println(arraylist);
+
+	        for(Player player : array) {
+
+	        		System.out.println(player.toString());
 	        }
 
 	}

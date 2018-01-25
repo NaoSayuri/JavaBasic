@@ -9,12 +9,8 @@ package practice02;
 public class PTra02_06 {
 	public static void main(String[] args) {
 
-		int z = 50;
-		int w = 10;
-		int x= z;
-		int y = w;
-
-
+		int y = 50;
+		int x = 10;
 
 		System.out.println("x:" + x);
 		System.out.println("y:" + y);

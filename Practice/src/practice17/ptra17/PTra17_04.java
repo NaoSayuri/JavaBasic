@@ -19,7 +19,7 @@ public class PTra17_04 {
 		int arr_num = date.length;
 		for(int i = 0; i <= arr_num - 1; i++){
 			try {
-				Thread.sleep(300);
+				Thread.sleep(100);
 			}
 			catch(InterruptedException e) {
 			}

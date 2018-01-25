@@ -12,7 +12,7 @@ public class PTra02_10 {
 		int coffee = 120;	// コーヒーの値段
 		int snack = 200;	// スナック菓子
 
-		double tax = (2*coffee+snack)*1.08;
+		double tax = (2 * coffee)+snack * 1.08;
 		double total = moneyInHand-tax;
 		int without =(int)total;
 

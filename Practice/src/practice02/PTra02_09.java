@@ -11,24 +11,21 @@ public class PTra02_09 {
 		int length = 9;	// 底辺
 		int height = 23;	// 高さ
 
-		int quadrangle = length*height;
+	// ★ 変数quadrangleに、四角形の面積を代入してください
+
+		double quadrangle = (double) length * height;
+
+			// ★ 変数quadrangleを出力してください
+
 		System.out.println(quadrangle);
 
-		int triangle = length*height/2;
-		System.out.println(triangle);
+			// ★ 変数triangleに、三角形の面積を代入してください
 
-
-		// ★ 変数quadrangleに、四角形の面積を代入してください
-
-
-		// ★ 変数quadrangleを出力してください
-
-
-		// ★ 変数triangleに、三角形の面積を代入してください
-
+		double triangle = (double)length * height / 2;
 
 		// ★ 変数triangleを出力してください
 
+		System.out.println(triangle);
 
 	}
 }

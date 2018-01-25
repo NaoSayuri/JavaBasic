@@ -43,9 +43,9 @@ public class PTra03_08 {
 
 		if (num == 1) {
 			System.out.println(money -= orange);
-		}else if (num==2) {
+		}else if (num == 2) {
 			System.out.println(money -= apple);
-		}else if (num==3) {
+		}else if (num == 3) {
 			System.out.println(money -= coffee);
 		}
 

@@ -15,9 +15,7 @@ public class PTra01_02 {
 		//コメントにしました。
 
 		//  ★「Hello, world」と出力（コマンドプロンプトに表示）してください
-		System.out.println("Hello");
-		System.out.println("world");
-
+		System.out.println("Hello,world");
 
 	}
 }
